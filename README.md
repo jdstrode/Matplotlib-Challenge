@@ -1,5 +1,26 @@
 # Matplotlib Homework - The Power of Plots
 
+Inside of this repository
+
+The below is a breakdown (and instructions) for a Matplotlib Homework Assignment required for the Data Science Bootcamp @ Northwestern University.
+
+Students were to utilize Jupyter Notebook / Jupyter Lab to complete the assignment.  My finalized answers/results are included within the below document. 
+
+Github Matplotlib-Challenge folder summary:
+
+  The Pymaceuticals folder contains:
+  * A data folder housing the inital data set: Mouse_metadata.csv & Study_results.csv
+  * A pymaceuticals_starter.ipynb file to store our scripting in and act as our template.  
+  * A pymaceuticals_starter_with_plots.ipynb file that shows the final results we are supposed to acheive.
+  * A pymaceuticals.ipynb file that houses my script/code for the assignment.
+
+  The Images folder contains:
+  * The final plots I created saved in image form
+  * The template laboratory image used within this README.md file
+
+The assignment asks for our obvservations from the data/analysis.  This is included further below in this document along with the final plot images that I created from this assignment and inserted within this document. 
+
+
 ## Background
 
 What good is data without a good plot to tell the story?
@@ -24,9 +45,19 @@ Your tasks are to do the following:
 
 * Generate a bar plot using both Pandas's `DataFrame.plot()` and Matplotlib's `pyplot` that shows  the number of total mice for each treatment regimen throughout the course of the study.
 
+#My Results:
+
+![micebar1](Images/micebar1.png)
+![micebar2](Images/micebar2.png)
+
   * **NOTE:** These plots should look identical.
 
 * Generate a pie plot using both Pandas's `DataFrame.plot()` and Matplotlib's `pyplot` that shows the distribution of female or male mice in the study.
+
+#My Results:
+
+![micepie1](Images/micepie1.png)
+![micepie2](Images/micepie2.png)
 
   * **NOTE:** These plots should look identical.
 
@@ -36,13 +67,40 @@ Your tasks are to do the following:
 
   **Hint**: All four box plots should be within the same figure. Use this [Matplotlib documentation page](https://matplotlib.org/gallery/pyplots/boxplot_demo_pyplot.html#sphx-glr-gallery-pyplots-boxplot-demo-pyplot-py) for help with changing the style of the outliers.
 
+
+#My Results:
+
+![drugboxplot](Images/drugboxplot.png)
+
 * Select a mouse that was treated with Capomulin and generate a line plot of tumor volume vs. time point for that mouse.
+
+
+#My Results:
+
+![plotl509](Images/plotl509.png)
 
 * Generate a scatter plot of mouse weight versus average tumor volume for the Capomulin treatment regimen.
 
+
+#My Results:
+
+![scattercapomulin](Images/scattercapomulin.png)
+
 * Calculate the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment. Plot the linear regression model on top of the previous scatter plot.
 
+
+#My Results:
+
+![correlationcapomulin](Images/correlationcapomulin.png)
+
 * Look across all previously generated figures and tables and write at least three observations or inferences that can be made from the data. Include these observations at the top of notebook.
+
+#My Results:
+* Observations
+  * 1) The treatments (Drugs) that appeared to be the most effective, based on reduction of tumor volume over time, appear to be Capomulin & Ramicane.  In fact, their results were similar, with Ramicane delivering slightly more consistent results from a variance/outlier/standard deviation standpoint.
+  * 2) The initial data that was compiled, included several Mouse ID's with the same Timepoint stamps, which throws into question the validity of the data accompanying each one of these Mouse ID's (tumor volume, weight, etc). As such, this data was removed for analysis purposes.
+  * 3) There were surprisingly few outliers among the Tumor Volume measurements when reviewing the four sample drugs in question (Capomulin, Ramicane, Infubinol, Ceftamin).  Only Infubinol had outliers identified, which would have been treatments that were surprisingly effective vs the rest of the dataset.  
+  * 4) Surprisingly or not, the weight & tumor volume of each mouse were highly correlated.  Common sense would leave us to deduce that if a tumor is larger it will make the mouse weight more, but without more data it is difficult to state this as fact.
 
 Here are some final considerations:
 
